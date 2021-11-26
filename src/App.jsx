@@ -1,6 +1,18 @@
-import './styles/global.css'
+
+import { Count } from './components/count';
+import { RepositoryList } from './components/RepositoryList';
+
+
+
+import './styles/global.scss';
+
 
 export function App() {
 
-    return <h1>ola mundo</h1>
+    return (
+        <>
+            <RepositoryList />
+            <Count />
+        </>
+    )
 }
